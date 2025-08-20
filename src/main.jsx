@@ -8,8 +8,8 @@ import { NhostProvider, NhostClient } from '@nhost/react';
 import { NhostApolloProvider } from '@nhost/react-apollo';
 
 const nhost = new NhostClient({
-  subdomain: 'zqxgevbflxgdjclkxeqp', // Replace with your subdomain
-  region: 'ap-south-1'      // Replace with your region
+  subdomain: import.meta.env.VITE_NHOST_SUBDOMAIN,
+  region: import.meta.env.VITE_NHOST_REGION
 });
 
 ReactDOM.createRoot(document.getElementById('root')).render(
